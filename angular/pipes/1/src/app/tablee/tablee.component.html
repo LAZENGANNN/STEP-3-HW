@@ -1,0 +1,18 @@
+<div class="cont">
+  <div class="line" >
+    <div class="one">фото</div>
+    <div class="one">прордукт</div>
+    <div class="one">бел</div>
+    <div class="one">жир</div>
+    <div class="one">угл</div>
+    <div class="one">кал</div>
+  </div>
+  <div class="line" *ngFor="let el of arr">
+    <div class="one"><img style="height: 10px;" src="{{el.imgLink }}" alt=""></div>
+    <div class="one">{{el.name}}</div>
+    <div class="one">{{el.bel}}</div>
+    <div class="one">{{el.jir}}</div>
+    <div class="one">{{el.ugl}}</div>
+    <div class="one">{{el.kal}}</div>
+  </div>
+</div>

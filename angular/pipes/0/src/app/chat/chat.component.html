@@ -1,0 +1,33 @@
+<div
+  style="
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+    padding: 15px;
+    width: 600px;
+    margin: auto;
+  "
+>
+  <div class="chatWindow">
+    <p class="mes" *ngFor="let item of messages" >{{ item }}</p>
+    <img *ngIf="messages.length === 0" style="width: 150px; height: 150px; margin: auto;" src="https://media.tenor.com/kglDzTqoEUAAAAAM/maxwell-cat.gif" alt="">
+  </div>
+  <div
+    style="
+      display: flex;
+      padding: 10px;
+      margin: 10px;
+      height: 35px;
+      border: 1px solid black;
+    "
+  >
+    <input
+      type="text"
+      [(ngModel)]="typingNow"
+      (ngModelChange)="changeTypingNow($event)"
+      style="width: 90%; height: 30"
+      placeholder="ask chat"
+    />
+    <button style="width: 10%; height: 30px" (click)="addMessage()">^</button>
+  </div>
+</div>

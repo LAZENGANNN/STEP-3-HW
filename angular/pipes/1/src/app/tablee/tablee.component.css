@@ -1,0 +1,15 @@
+.const {
+  width: 90%;
+  margin: auto;
+}
+
+.line {
+  display: grid;
+  grid-template-columns: 1fr 4fr 1fr 1fr 1fr 1fr;
+}
+
+.one {
+  border: 1px solid black;
+  padding: 3px;
+
+}

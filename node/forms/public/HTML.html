@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script defer src="script.js"></script>
+    <link rel="stylesheet" href="style.css" />
+    <title>FORMS</title>
+  </head>
+  <body>
+    <a href="/users/getAll"> all users</a>
+    <div class="forGrid">
+      РЕГИСТРАЦИЯ
+      <form id="createForm" action="/api/users/create" method="POST" class="c" enctype="multipart/form-data">
+        <div>
+          <input type="text" placeholder="login" name="login" required />
+        </div>
+        <div>
+          <input type="text" placeholder="password" name="password" required />
+        </div>
+        <div>
+          <input type="text" placeholder="repeat password" name="password2" required />
+        </div>
+        <div>
+          <input type="email" placeholder="email" name="email" required />
+        </div>
+        <div>
+          <input type="file" name="photo"/>
+        </div>
+
+        <div>
+          <button id="sendFormButton">отправить</button>
+        </div>
+      </form>
+    </div>
+
+    <div class="forGrid">
+      АВТОРИЗАЦИЯ
+      <form id="authForm" action="/api/users/auth" method="POST" class="c">
+        <div>
+          <input type="text" placeholder="login" name="login" required />
+        </div>
+        <div>
+          <input type="text" placeholder="password" name="password" required />
+        </div>
+
+        <div>
+          <button id="sendFormButtonAuth">отправить</button>
+        </div>
+      </form>
+    </div>
+
+    <div class="forGrid">
+      РЕДАКТИРОВАНИЕ
+      <form id="editForm" action="/api/users/edit" method="POST" class="c">
+        <div>
+          <input type="text" placeholder="login" name="login" required />
+        </div>
+        <div>
+          <input type="text" placeholder="password" name="password" required />
+        </div>
+
+        <select name="action" id="sel">
+          <option value="delete" selected>удалить</option>
+          <option value="ban" selected>заблокировать</option>
+        </select>
+
+        <div>
+          <button id="sendFormButtonEdit">отправить</button>
+        </div>
+      </form>
+    </div>
+
+  </body>
+</html>

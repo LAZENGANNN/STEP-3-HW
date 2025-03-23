@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script defer src="JS/script.js"></script>
+    <link rel="stylesheet" href="style.css" />
+    <title>cars</title>
+  </head>
+  <body>
+    <div class="controlDiv">
+      <div class="c">
+        <button id="getButton">все машины</button>
+      </div>
+
+      <div class="c">
+        ДОБАВИТЬ АВТО В БАЗУ
+        <input type="text" id="mark" placeholder="mark" />
+        <input type="text" id="number" placeholder="number" />
+        <input type="text" id="color" placeholder="color" />
+        <input type="text" id="weight" placeholder="weight" />
+        <input type="text" id="year" placeholder="year" />
+        <input type="text" id="engineType" placeholder="engineType" />
+        <input type="text" id="crimes" placeholder="crimes" />
+        <input type="text" id="fines" placeholder="fines" />
+
+        <button id="createButton">добавить</button>
+      </div>
+
+      <div class="c">
+        НАЙТИ АВТО
+        <input type="text" id="mark1" placeholder="mark" />
+        <input type="text" id="number1" placeholder="number" />
+        <input type="text" id="color1" placeholder="color" />
+        <input type="text" id="weight1" placeholder="weight" />
+        <input type="text" id="year1" placeholder="year" />
+        <input type="text" id="engineType1" placeholder="engineType" />
+        <input type="text" id="crimes1" placeholder="crimes" />
+        <input type="text" id="fines1" placeholder="fines" />
+
+        <button id="searchButton">найти</button>
+      </div>
+
+      <div class="c">
+        УДАЛИТЬ АВТО
+        <input type="text" placeholder="введите номер" id="num0">
+
+        <button style="color: red;" id="delButton">удалить</button>
+
+      </div>
+
+      <div class="c">
+        ДОБАВИТЬ НАРУШЕНИЕ
+        <input type="text" placeholder="введите номер" id="num1" />
+
+        <button id="addCrime">добавить нарушение</button>
+      </div>
+      <div class="c">
+        ИЗМЕНИТЬ ЦВЕТ
+        <input type="text" placeholder="введите цвет" id="colChange" />
+        <input type="text" placeholder="введите номер" id="num2">
+
+        <button id="colorButton">изменить цвет</button>
+      </div>
+    </div>
+
+    <div id="res" class="res"></div>
+  </body>
+</html>

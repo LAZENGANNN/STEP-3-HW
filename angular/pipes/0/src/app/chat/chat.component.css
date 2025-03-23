@@ -1,0 +1,16 @@
+.mes:nth-child(odd) {
+  padding: 10px;
+  border-radius: 10px;
+  background-color: lightgray;
+  max-width: 400px;
+  align-self: end;
+}
+
+.chatWindow {
+  height: 600px;
+  overflow-y: scroll;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end ;
+  overflow-y: scroll;
+}

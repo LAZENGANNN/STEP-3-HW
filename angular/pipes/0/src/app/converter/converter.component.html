@@ -1,0 +1,19 @@
+<div style="display: flex; flex-direction: column; width: 500px; margin:  auto; background: lightblue;">
+    <div>BYN <input type="number"
+         [(ngModel)]="BYN" 
+         (ngModelChange) = "BYNchange($event)"
+         value="{{USD | uSDtoBYN : rate}}"
+         > </div>
+
+    <div>USD <input type="number" 
+        [(ngModel)]="USD" 
+        (ngModelChange) = "USDchange($event)"
+        value="{{ BYN | bYNtoUSD : rate }}"
+        ></div> 
+
+     <div>rate <input type="number" 
+        [(ngModel)]="rate" 
+        (ngModelChange) = "rateChange($event)"
+        value="{{rate}}"
+        ></div>
+</div>
