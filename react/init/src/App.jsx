@@ -34,7 +34,8 @@ function App() {
       name: "Беспроводные наушники",
       rating: 4.7,
       reviews: 1234,
-      deliveryDate: "2025-03-25"
+      deliveryDate: "2025-03-25",
+      description: "Качественные беспроводные наушники с высоким рейтингом."
     },
     {
       price: 999.99,
@@ -43,7 +44,8 @@ function App() {
       name: "Ноутбук",
       rating: 4.8,
       reviews: 847,
-      deliveryDate: "2025-03-28"
+      deliveryDate: "2025-03-28",
+      description: "Мощный ноутбук для работы и развлечений."
     },
     {
       price: 49.99,
@@ -52,7 +54,8 @@ function App() {
       name: "Спортивная бутылка",
       rating: 4.5,
       reviews: 512,
-      deliveryDate: "2025-03-22"
+      deliveryDate: "2025-03-22",
+      description: "Удобная бутылка для занятий спортом и активного образа жизни."
     },
     {
       price: 25.99,
@@ -61,7 +64,8 @@ function App() {
       name: "Книга",
       rating: 4.9,
       reviews: 322,
-      deliveryDate: "2025-03-20"
+      deliveryDate: "2025-03-20",
+      description: "Интересная книга для чтения в свободное время."
     },
     {
       price: 299.99,
@@ -70,7 +74,8 @@ function App() {
       name: "Смарт-часы",
       rating: 4.6,
       reviews: 578,
-      deliveryDate: "2025-03-30"
+      deliveryDate: "2025-03-30",
+      description: "Многофункциональные смарт-часы с современным дизайном."
     }
   ];
 
@@ -125,7 +130,7 @@ function App() {
         которые выделены красной рамкой генерировать случайным образом из заготовленного массива объектов.
         Стартовую стоимость товара рандомить случайным образом.
       </pre>
-      <OZONcard data={prodsArr[0]}/>
+      <OZONcard data={prodsArr[Math.floor(0 + Math.random() * (4 - 0 + 1))]}/>
 
     </>
 
