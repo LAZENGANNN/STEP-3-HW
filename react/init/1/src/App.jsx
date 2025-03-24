@@ -1,4 +1,5 @@
 import "./App.css";
+import ColorComp from "./ColorComp/ColorComp";
 import Header from "./Header/Header";
 import Steamdb from "./steamdb/Steamdb";
 
@@ -19,7 +20,15 @@ function App() {
 
       <Header></Header>
 
-      
+      <hr />
+      <pre>Усложнение: реализуйте один компонент, который через пропс
+         принимает формат генерации случайной строки
+         для определения оттенка и генерирует поле ввода, вставляет,
+          в него значение сгенерированного оттенка и рядом отображает данный оттенок.</pre>
+
+      <ColorComp type={"HEX"} />
+      <ColorComp type={"RGB"} />
+      <ColorComp type={"RGBA"} />
     </>
   );
 }

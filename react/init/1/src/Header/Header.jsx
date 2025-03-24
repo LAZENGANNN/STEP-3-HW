@@ -9,7 +9,7 @@ function Header() {
     `авторы`,
     `компани`,
   ]);
-  const [counters, setCounters] = useState([31, 7, 32, 61, 12, 43, 65]);
+  const [counters] = useState([31, 7, 32, 61, 12, 43, 65]);
 
   return (
     <div
