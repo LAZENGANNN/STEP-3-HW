@@ -1,0 +1,10 @@
+.cont {
+    display: grid;
+    width: 800px;
+    margin: 0 auto;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 50px;
+    background-color: black;
+    color: white;
+  }
+  
