@@ -1,0 +1,18 @@
+<div class="cont">
+    <h1 *ngIf="arr.length == 0">arr is empty</h1>
+    <div class="line">
+        <div class="block">photo</div>
+        <div class="block">name</div>
+        <div class="block">bel</div>
+        <div class="block">jir</div>
+        <div class="block">ugl</div>
+        <div class="block">kal</div>
+    </div>
+    <app-line
+        class="line"
+        *ngFor="let el of arr"
+        [productArrElement]="el"
+    >
+
+    </app-line>
+</div>

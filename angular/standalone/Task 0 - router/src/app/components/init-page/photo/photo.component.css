@@ -1,0 +1,25 @@
+.container{
+    border: 1px solid black;
+    max-width: 600px;
+    /* width:fit-content; */
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}
+p, h1, h2{
+    margin: 0;
+}
+
+img{
+    max-width: 300px;
+    height: 300px;
+    margin: auto;
+}
+
+.descriptionDiv{
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+}
+

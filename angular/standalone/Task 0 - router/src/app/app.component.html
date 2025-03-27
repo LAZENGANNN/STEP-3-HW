@@ -1,0 +1,43 @@
+<nav>
+  <ul>
+    <li>
+      <a
+        routerLink="/"
+        routerLinkActive="active"
+        [routerLinkActiveOptions]="{ exact: true }"
+      >
+        домашняя страница
+      </a>
+    </li>
+
+    <li>
+      <a
+        routerLink="/output"
+        routerLinkActive="active"
+        [routerLinkActiveOptions]="{ exact: true }"
+      >
+        OUTPUT
+      </a>
+    </li>
+    <li>
+      <a
+        routerLink="/input"
+        routerLinkActive="active"
+        [routerLinkActiveOptions]="{ exact: true }"
+      >
+        INPUT
+      </a>
+    </li>
+    <li>
+      <a
+        routerLink="/init"
+        routerLinkActive="active"
+        [routerLinkActiveOptions]="{ exact: true }"
+      >
+        INIT
+      </a>
+    </li>
+  </ul>
+</nav>
+
+<router-outlet></router-outlet>

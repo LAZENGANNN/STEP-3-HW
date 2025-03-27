@@ -1,0 +1,15 @@
+.cont{
+    display: flex;
+    flex-direction: column;
+}
+
+.line{
+    display: grid;
+    grid-template-columns: 1fr 4fr 1fr 1fr 1fr 1fr;
+}
+
+.block{
+    padding: 5px;
+    border: 1px solid black;
+    height: 50px;
+}
