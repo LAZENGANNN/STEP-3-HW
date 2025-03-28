@@ -1,0 +1,23 @@
+<div class="cont">
+    <div class="c2">   
+        фильтр по свойству(цена)
+        <input type="number" (change)="FilterChange($event)">    
+    </div>
+    <div class="c2">
+        сортировка по характеристикам
+        <button value="price" (click)="SortClick($event)">цена</button>
+        <button value="square" (click)="SortClick($event)">площадь</button>
+        <button value="rooms" (click)="SortClick($event)">комнаты</button>
+    </div>
+    <div class="c2">
+        поиск по заголовку
+        <input type="text" (change)="searchChange($event)">
+    </div>
+    <div class="c2">
+        поиск по заголовку (с подсветкой нужного блока)
+        <input type="text" (change)="lightupSearchChange($event)">
+    </div>
+    <div class="c2">
+        
+    </div>
+</div>

@@ -1,0 +1,60 @@
+<!-- функционал из дз input -->
+<!-- <div class="head">
+  <div>
+    <input
+      type="number"
+      (change)="calcAvgSumN($event)"
+      placeholder="введите кол-во комнат"
+    />
+    <p [innerText]="avgSumN" style="border: 1px solid black; width: 200px"></p>
+  </div>
+  <div>
+    <button class="b" (click)="countads()">кол-во обьявлений</button>
+    <p style="border: 1px solid black; width: 100px">{{ adCount }}</p>
+  </div>
+  <div>
+    <button class="b" (click)="calcAvgSum()">средняя цена всех</button>
+    <p style="border: 1px solid black; width: 100px">{{ avgSum }}</p>
+  </div>
+</div>
+
+<div class="cont" style="border: dotted 3px red; margin: 50px; padding: 50px">
+  <div>
+    самый дешевый<app-ad
+      *ngIf="cheapVisible"
+      [estateUnit]="cheapest[0]"
+    ></app-ad>
+    <button (click)="showCheap()" *ngIf="!cheapVisible">
+      показать самый дешевый
+    </button>
+  </div>
+  <div>
+    самый дорогой<app-ad
+      *ngIf="expenciveVisible"
+      [estateUnit]="expencive[0]"
+    ></app-ad>
+    <button (click)="showExpencive()" *ngIf="!expenciveVisible">
+      показать самый дорогой
+    </button>
+  </div>
+</div> -->
+
+
+<app-filters-block
+(setSortOutput)="applySort($event)"
+(setFilterOutput)="applyFilters($event)"
+(setSearchOutput)="applySearch($event)"
+(setLightupSearchOutput)="applyLightupSearchOutput($event)"
+></app-filters-block>
+
+<button (click)="ngOnInit()">перерандомить</button>
+<button (click)="offFilters()">убрать фильтры</button>
+
+<div class="cont">
+  <app-ad *ngFor="let el of arr" 
+  [estateUnit]="el"
+  [ngClass]="{
+    'lightup': lightupClass(el)
+  }"
+  ></app-ad>
+</div>
