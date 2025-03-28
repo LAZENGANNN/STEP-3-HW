@@ -1,0 +1,9 @@
+.cont{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+}
+.lightup{
+    border: 4px red dotted;
+    background-color: cadetblue;
+}

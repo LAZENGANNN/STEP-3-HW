@@ -1,0 +1,16 @@
+<app-filters-block
+  (setSortOutput)="applySort($event)"
+  (setFilterOutput)="applyFilters($event)"
+  (setSearchOutput)="applySearch($event)"
+  (setDeleteOutput)="deleteBlock($event)"
+></app-filters-block>
+
+<!-- <button (click)="ngOnInit()">перерандомить</button> -->
+<!-- <button (click)="offFilters()">убрать фильтры</button> -->
+
+<div class="cont">
+  <app-ad
+    *ngFor="let el of arr"
+    [estateUnit]="el"
+  ></app-ad>
+</div>
