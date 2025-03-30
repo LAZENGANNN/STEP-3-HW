@@ -1,0 +1,39 @@
+<div
+  style="
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+    padding: 15px;
+    width: 600px;
+    margin: auto;
+  "
+>
+  <div class="cont">
+    <img src="{{ chatWith?.img }}" alt="" class="img" />
+    <div class="data">
+      <div class="name">{{ chatWith?.nickname }}</div>
+      <div class="last">{{ chatWith?.last }}</div>
+    </div>
+  </div>
+  <div class="chatWindow">
+    <p class="mes" contenteditable *ngFor="let item of messages">{{ item }}</p>
+  </div>
+  <div
+    style="
+      display: flex;
+      padding: 10px;
+      margin: 10px;
+      height: 35px;
+      border: 1px solid black;
+    "
+  >
+    <input
+      type="text"
+      [(ngModel)]="typingNow"
+      (ngModelChange)="changeTypingNow($event)"
+      style="width: 90%; height: 30"
+      placeholder=""
+    />
+    <button style="width: 10%; height: 30px" (click)="addMessage()">^</button>
+  </div>
+</div>

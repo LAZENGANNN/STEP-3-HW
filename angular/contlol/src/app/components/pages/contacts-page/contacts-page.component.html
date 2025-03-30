@@ -1,0 +1,32 @@
+<div class="cont">
+  <div class="contactsDiv">
+    <app-contact-line *ngFor="let el of arr" [contact]="el"></app-contact-line>
+  </div>
+  <div class="options">
+    <div>
+      создать новый контакт
+      <div>
+        <input
+          type="number"
+          required
+          placeholder="phone number"
+          [(ngModel)]="addingContact.number"
+          (ngModelChange)="onPhoneChange($event)"
+        />
+        <input
+          type="text"
+          placeholder="nickname"
+          [(ngModel)]="addingContact.nickname"
+          (ngModelChange)="onNicknameChange($event)"
+        />
+        <input
+          type="email"
+          placeholder="email"
+          [(ngModel)]="addingContact.email"
+          (ngModelChange)="onEmailChange($event)"
+        />
+        <button (click)="addContact()">подтвердить</button>
+      </div>
+    </div>
+  </div>
+</div>

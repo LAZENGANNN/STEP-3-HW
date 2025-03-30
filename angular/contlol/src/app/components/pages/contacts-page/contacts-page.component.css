@@ -1,0 +1,18 @@
+.cont{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contactsDiv{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: 900px;
+    overflow-y: scroll;
+}
+
+.options{
+    margin: auto
+}

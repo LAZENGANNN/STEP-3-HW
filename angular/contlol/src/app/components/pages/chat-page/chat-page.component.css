@@ -1,0 +1,45 @@
+.mes:nth-child(odd) {
+  padding: 10px;
+  border-radius: 10px;
+  background-color: lightgray;
+  max-width: 400px;
+  align-self: end;
+}
+
+.chatWindow {
+  height: 600px;
+  overflow-y: scroll;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  overflow-y: scroll;
+}
+
+.cont {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border: 1px solid #ccc; /* Линия для разделения */
+}
+
+.img {
+  width: 50px; /* Размер изображения */
+  height: 50px;
+  border-radius: 50%; /* Круглая форма для изображения */
+  margin-right: 15px; /* Расстояние между изображением и текстом */
+}
+
+.data {
+  display: flex;
+  flex-direction: column;
+}
+
+.name {
+  font-size: 16px; /* Увеличение шрифта имени */
+  font-weight: bold; /* Жирный текст */
+}
+
+.last {
+  font-size: 14px; /* Размер шрифта для "last seen" */
+  color: #888; /* Светлый цвет для второстепенной информации */
+}

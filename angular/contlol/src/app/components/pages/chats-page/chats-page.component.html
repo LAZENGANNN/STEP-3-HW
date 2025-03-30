@@ -1,0 +1,20 @@
+<div class="cont">
+  <div class="contactsDiv">
+    <app-chat-line *ngFor="let el of renderArr" [contact]="el"></app-chat-line>
+  </div>
+
+  <div class="options">
+    <div>
+      создать новый контакт
+      <div>
+        <input
+          type="text"
+          placeholder="nickname"
+          [(ngModel)]="findableNick"
+          (ngModelChange)="onNicknameChange($event)"
+        />
+        <button (click)="startChat()">подтвердить</button>
+      </div>
+    </div>
+  </div>
+</div>

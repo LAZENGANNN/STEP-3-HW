@@ -1,0 +1,27 @@
+<div>
+  <input
+    type="number"
+    required
+    placeholder="phone number"
+    [(ngModel)]="currentUser.phone"
+    (ngModelChange)="onPhoneChange($event)"
+  />
+  <input
+    type="text"
+    placeholder="nickname"
+    [(ngModel)]="currentUser.nickname"
+    (ngModelChange)="onNicknameChange($event)"
+  />
+  <input
+    type="email"
+    placeholder="email"
+    [(ngModel)]="currentUser.email"
+    (ngModelChange)="onEmailChange($event)"
+  />
+  <button (click)="authorize()">подтвердить</button>
+  <button (click)="logOut()">выйти</button>
+</div>
+
+<div style="padding: 50px; border: 2px solid red; width: 150px; margin: 200px;">
+  <button (click)="clear()">очистить локальное хранилище</button>
+</div>

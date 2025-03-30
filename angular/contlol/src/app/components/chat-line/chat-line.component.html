@@ -1,0 +1,14 @@
+<a
+  routerLink="/chat/{{contact?.nickname}}"
+>
+  <div class="cont">
+    <div class="c2">
+      <img src="{{ contact?.img }}" alt="" />
+      <div class="c3">
+        <p class="name">{{ contact?.nickname }}</p>
+        <p class="lastMess">{{ contact?.nickname }}</p>
+      </div>
+    </div>
+    <div class="lastBeen">{{ contact?.last }}</div>
+  </div>
+</a>
